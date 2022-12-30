@@ -15,11 +15,11 @@
         <div class="nav">
              <nav>
                 <a href=""><span></span><div class="nav-lable"></div></a>   
-                <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/person.circle@2x.png" alt=""></div> 
+               <!-- <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/person.circle@2x.png" alt=""></div> 
                 <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/plus.square.on.square@2x.png" alt=""></div>
                 <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/plus.square.on.square@2x.png" alt=""></div> 
                 <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/plus.square.on.square@2x.png" alt=""></div> 
-                <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/plus.square.on.square@2x.png" alt=""></div> 
+                <div class="navbtn" onclick="click()"><img src="/Users/andreassanchezpaetzmann/Gonzalez Hausverwaltung/ghv app/library/plus.square.on.square@2x.png" alt=""></div> -->
              </nav>
         </div>
 
@@ -29,30 +29,35 @@
                   <h1>Andreas Workspace</h1>
             </div>
 
-            <div class="dashboard">
-                <h2>Heute</h2>
-                <h2>Morgen</h2>
-                <h2>Woche</h2>
-                <h2>Monat</h2>
-
-            </div>
-
             <div class="container">
 
                 <div class="filter">
+                    <summary>
+                        Filter
+                    </summary>
+                    <details>
+                        <div><h3>Sortieren nach</h3><button>X</button></div>
+                        <div>
+                            <a>Dringlichkeit</a>
+                            <br>
+                            <a>Mitarbeiter</a>
+                        </div>
+                    </details>
 
                     <input type="search" name="" id="">
-
 
             </div>
                 <div class="usertable-container">
                     <table class="usertable">
                         <tr>
                             <th>Nr.</th>
-                            <th>Objekt</th>
                             <th>Issue</th>
+                            <th>Objekt</th>
+                            <th>Author</th>
+                            <th>Deadline</th>
                             <th>Zugewiesen</th>
-                            <th>action</th>
+                            <th> </th>
+                            <th>Prio</th>
                         </tr>
                         <tbody class="usertable-body">
 
@@ -65,7 +70,10 @@
         </div> <!--- App Content End-->
     </div><!--- App Container End-->
   
-    
+
+    <button onclick="testFunc()">Run Test Script</button>
+    <button onclick="neuerAuftrag()">Neuer Auftrag</button>
+
 
 <script src="./src/script.js" async></script>
 </body>
