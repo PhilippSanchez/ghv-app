@@ -27,13 +27,24 @@ function neuerAuftrag() {
     counter++;
 
 
-}
+};
+
+
 
 function deleteRow(){
     console.log('removed');
-}
+};
 
 
 function inspectRow(){
-    alert('inspected')
-}
+
+    let infoModal = document.createElement('div');
+
+    infoModal.id = 'infoModal';
+    infoModal.innerHTML = '<h1>helloooooo</h1>';
+
+    document.body.appendChild(infoModal);
+   
+};
+
+
