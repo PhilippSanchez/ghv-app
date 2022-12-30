@@ -3,3 +3,23 @@
 
    Hover Over Table Row Color Change 
    Hover over Table Row Tool Tip */
+
+
+
+
+/* Row actions */
+.rowBtn {
+   cursor: pointer;
+}
+/* inspect row */
+
+.inspectRowBtn:hover{
+    background-color: deepskyblue;
+}
+
+/* delete Row */
+
+
+.deleteRowBtn:hover {
+    background-color: red;
+}

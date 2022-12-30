@@ -12,11 +12,14 @@ function neuerAuftrag() {
     let newObjectTd = `<td>${prompt('Gib die Object Nummer ein')}</td>`;
     let issueTd = `<td>${prompt('Informationen zum Problem')}</td>`;
     let zuweisungTd = `<td><img src="/Users/rimlight/Documents/GHV PVT APP/ghv-app/library/Memojis/IMG_4655.PNG" style="height: 30px;"></td>`;
+    let removeBtn = '<td onclick="deleteRow()" class="rowBtn deleteRowBtn">…</td>'
+    let inspectBtn = '<td onclick="inspectRow()" class="rowBtn inspectRowBtn">…</td>'
+    
 
 
     let newRow = document.createElement('tr');
     newRow.classList.add('auftrags-row');
-    newRow.innerHTML = newCounterTd + newObjectTd + issueTd + zuweisungTd;
+    newRow.innerHTML = newCounterTd + newObjectTd + issueTd + zuweisungTd + removeBtn + inspectBtn;
     
     document.querySelector('.usertable-body').appendChild(newRow)
     console.log(newRow)
@@ -27,5 +30,10 @@ function neuerAuftrag() {
 }
 
 function deleteRow(){
-    
+    console.log('removed');
+}
+
+
+function inspectRow(){
+    alert('inspected')
 }
