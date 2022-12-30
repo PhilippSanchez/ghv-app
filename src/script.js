@@ -1,9 +1,9 @@
 let auftragsCounter = 0;
-let user;
 
-const upCount = (auftragsCounter) => {
-    
-    return auftragsCounter += 1;
-};
 
-console.log(upCount());
+
+let neuerAuftrag = document.createElement('tr');
+neuerAuftrag.innerHTML =  `<td class="objNr.">${auftragsCounter}<td><td>601-TFK<td>`;
+
+
+document.getElementsByClassName('usertable-body').appendChild(neuerAuftrag);
