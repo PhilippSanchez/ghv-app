@@ -46,7 +46,7 @@
 
                     <input type="search" name="" id="">
 
-                    <button onclick="neuerAuftrag()">Neuer Auftrag</button>
+                    <button onclick="showAuftragsModal()">Neuer Auftrag</button>
 
             </div>
                 <div class="usertable-container">
@@ -80,13 +80,21 @@
 
 
     <div class="neuerAuftragModal">
-        <form>
+        <form id="formContainer">
             <label for="deadline">Deadline</label>
+            <br>
             <input type="date" name="deadline" id="deadline-input">
+            <br>
+            <label for="auftrags-titel"></label>
+            <br>
+            <textarea name="" id="auftrags-title" cols="30" rows="1" placeholder="Titel"></textarea>
+            <br>
             <label for="Information">Auftrags details</label>
-            <textarea name="Information" id="" cols="30" rows="10"></textarea>
-            <button class="primaryBtn" type="submit">Anlegen</button>
-            <button class="sccondaryBtn">Abbrechen</button>
+            <br>
+            <textarea name="Information" id="" cols="30" rows="10" placeholder="Auftrags Details"></textarea>
+            <br>
+            <button class="primaryBtn" type="submit" onclick="neuerAuftrag()">Anlegen</button>
+            <button class="sccondaryBtn" onclick="closeAuftragsModal()">Abbrechen</button>
         </form>
     </div>
 
