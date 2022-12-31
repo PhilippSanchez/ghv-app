@@ -63,3 +63,14 @@ function closeAuftragsModal() {
     let auftragsModal = document.querySelector('.neuerAuftragModal');
     auftragsModal.style.visibility = 'hidden';
 }
+
+
+function closeLoginModal() {
+
+    let loginModal = document.querySelector('#loginForm');
+
+    loginModal.style.visibility = 'hidden';
+
+}
+
+

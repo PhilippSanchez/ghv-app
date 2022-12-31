@@ -84,3 +84,7 @@ table{
    backdrop-filter: blur(10px);
 }
 
+
+#loginForm {
+    visibility: visible;
+}

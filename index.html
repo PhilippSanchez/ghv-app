@@ -9,7 +9,16 @@
 </head>
 <body>
 
-
+<div id="loginForm">
+    <form>
+        <label for="login">Username</label>
+        <input type="email" name="" id="">
+        <label>Passwort</label>
+        <input type="password" name="" id="">
+        <button closeLoginModal() >login</button>
+        <button>Passwort vergessen</button>
+    </form>
+</div>
     <div class="app-container">
         
         <div class="nav">
@@ -93,7 +102,7 @@
             <br>
             <textarea name="Information" id="" cols="30" rows="10" placeholder="Auftrags Details"></textarea>
             <br>
-            <button class="primaryBtn" type="submit" onclick="neuerAuftrag()">Anlegen</button>
+            <button class="primaryBtn" onclick="neuerAuftrag()">Anlegen</button>
             <button class="sccondaryBtn" onclick="closeAuftragsModal()">Abbrechen</button>
         </form>
     </div>
