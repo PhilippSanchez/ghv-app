@@ -13,6 +13,7 @@ button {
    padding: 10px 20px 10px 20px;
 }
 
+
 button:hover {
    border: 1px solid orange;
 }
@@ -21,11 +22,28 @@ button:hover {
 
    Hover Over Table Row Color Change 
    Hover over Table Row Tool Tip */
+
 table{
    border-collapse: collapse;
+   width: 100%;
+   text-align: left;
 }
+
+.usertable {
+   background-color: rgb(18, 21, 28);
+}
+.usertable-container {
+   height: 600px;
+   width: 75%;
+}
+
+
+.usertable-body tr:nth-child(odd) {
+   background-color: rgb(48, 58, 80);
+}
+
 .usertable-body tr:hover{
-   background-color: orange;
+   background-color: rgb(41, 50, 69);
 }
 
 
@@ -47,3 +65,16 @@ table{
 .deleteRowBtn:hover {
     background-color: red;
 }
+
+
+
+/* Auftrags Modal Style*/
+
+.neuerAuftragModal {
+   background-color: rgba(41, 50, 69, 0.772);
+   margin: 30px;
+   padding: 20px;
+   border: 0.5px solid white;
+   border-radius: 8px;
+}
+

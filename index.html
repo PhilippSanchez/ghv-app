@@ -46,6 +46,8 @@
 
                     <input type="search" name="" id="">
 
+                    <button onclick="neuerAuftrag()">Neuer Auftrag</button>
+
             </div>
                 <div class="usertable-container">
                     <table class="usertable">
@@ -71,9 +73,22 @@
     </div><!--- App Container End-->
   
 
-    <button onclick="testFunc()">Run Test Script</button>
-    <button onclick="neuerAuftrag()">Neuer Auftrag</button>
 
+
+
+
+
+
+    <div class="neuerAuftragModal">
+        <form>
+            <label for="deadline">Deadline</label>
+            <input type="date" name="deadline" id="deadline-input">
+            <label for="Information">Auftrags details</label>
+            <textarea name="Information" id="" cols="30" rows="10"></textarea>
+            <button class="primaryBtn" type="submit">Anlegen</button>
+            <button class="sccondaryBtn">Abbrechen</button>
+        </form>
+    </div>
 
 <script src="./src/script.js" async></script>
 </body>

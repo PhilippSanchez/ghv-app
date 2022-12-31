@@ -1,7 +1,4 @@
 
-
-const testFunc = () => console.log('Test Running');
-
 let counter = 1;
 
 function neuerAuftrag() {
@@ -11,9 +8,10 @@ function neuerAuftrag() {
     let newCounterTd = `<td>${counter}</td>`;
     let newObjectTd = `<td>${prompt('Gib die Object Nummer ein')}</td>`;
     let issueTd = `<td>${prompt('Informationen zum Problem')}</td>`;
-    let zuweisungTd = `<td><img src="/Users/rimlight/Documents/GHV PVT APP/ghv-app/library/Memojis/IMG_4655.PNG" style="height: 30px;"></td>`;
+    let zuweisungTd = `<td><img src="/Users/rimlight/Documents/GHV PVT APP/ghv-app/library/Memojis/IMG_4655.PNG" style="height: 30px;"></td><td>…</td><td>…</td>`;
     let removeBtn = '<td onclick="deleteRow()" class="rowBtn deleteRowBtn">…</td>'
     let inspectBtn = '<td onclick="inspectRow()" class="rowBtn inspectRowBtn">…</td>'
+    let prioTd = '<td class="rowBtn inspectRowBtn">…</td>'
     
 
 
