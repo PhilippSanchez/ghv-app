@@ -89,20 +89,19 @@
 
 
     <div class="neuerAuftragModal">
-        <form id="formContainer">
-            <label for="deadline">Deadline</label>
+        <form id="formContainer" action="./index.html"  method="POST" onsubmit="neuerAuftrag()">
+            <label for="title-input">Deadline</label>
             <br>
-            <input type="date" name="deadline" id="deadline-input">
-            <br>
-            <label for="auftrags-titel"></label>
-            <br>
-            <textarea name="" id="auftrags-title" cols="30" rows="1" placeholder="Titel"></textarea>
-            <br>
-            <label for="Information">Auftrags details</label>
-            <br>
-            <textarea name="Information" id="" cols="30" rows="10" placeholder="Auftrags Details"></textarea>
-            <br>
-            <button class="primaryBtn" onclick="neuerAuftrag()">Anlegen</button>
+            <input type="text" name="title" id="title-input">
+
+            <input type="text" list="objekte">
+            <datalist id="objekte">
+                <option value="Taufkirchen"></option>
+                <option value="Xylophone"></option>
+            </datalist>
+
+            <textarea name="" id="" cols="30" rows="10">Bitte Infos Eintragen</textarea>
+            <input type="submit" value="Anlegen">
             <button class="sccondaryBtn" onclick="closeAuftragsModal()">Abbrechen</button>
         </form>
     </div>
