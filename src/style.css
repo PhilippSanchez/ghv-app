@@ -2,6 +2,7 @@ body{
    background-color: rgb(25, 31, 44);
    color: rgb(242, 232, 232);
    font-family: Arial, Helvetica, sans-serif;
+   width: 1500px;
 }
 
 
@@ -87,4 +88,97 @@ table{
 
 #loginForm {
     visibility: visible;
+}
+
+
+
+.auftragsListe {
+
+    grid-template: 100px 1fr / 1800px;
+    
+}
+
+
+.auftragsListeHeader{
+   background-color:  rgb(18, 22, 30);
+   grid-area: 1 / 1 / 1 / 1;
+}
+
+
+
+.listItem {
+    grid-area: 2 / 1 / 2 / 1;
+    background-color: rgba(15, 19, 26, 0.772);
+    display: grid;
+    padding: 10px 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.184);
+    border-radius: 100px;
+    width: 100%;
+    grid-template: repeat(1, 1fr) / repeat(10, 1fr);
+    margin: 20px 0;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgb(18, 22, 30);
+}
+
+.listItem:hover {
+    background-color: rgba(34, 42, 56, 0.933);
+}
+
+.itemSelector {
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.listIssueSection {
+    
+    grid-area: 1 / 2 / 1 / 7;
+}
+
+.listIssueSection a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.issueSubText {
+     margin-top: 20px;
+}
+
+.issueSubText span {
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 14px;
+     font-style: italic;
+     margin: 5px 10px 0 0;
+}
+.issueAssignment {
+    grid-area: 1 / 7 / 1 / 8;
+
+}
+.issueAssignment img{
+    height: 70px;
+    grid-area: 1 / 8 / 1 / 9;
+    position: relative;
+    top: 5px;
+}
+
+.prioSet {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    grid-area: 1 / 9 / 1 / 10;
+}
+
+
+.auftragsNummer {
+    align-self: center;
+    grid-area: 1 / 10 / 1 / 11;
+}
+
+
+.auftragsNummer h4{
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
 }

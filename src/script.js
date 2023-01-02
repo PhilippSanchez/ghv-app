@@ -32,21 +32,6 @@ function neuerAuftrag() {
 
 
 
-function deleteRow(){
-    console.log('removed');
-};
-
-
-function inspectRow(){
-
-    let infoModal = document.createElement('div');
-
-    infoModal.id = 'infoModal';
-    infoModal.innerHTML = '<h1>helloooooo</h1>';
-
-    document.body.appendChild(infoModal);
-   
-};
 
 
 
@@ -57,7 +42,7 @@ function showAuftragsModal() {
     let auftragsModal = document.querySelector('.neuerAuftragModal');
     auftragsModal.style.visibility = 'visible';
 
-    let backgroundBlur = document.querySelector('.app-container');
+    let backgroundBlur = document.querySelector('.auftragsListe');
     backgroundBlur.style.filter = 'blur(5px)';
 }
 
@@ -76,15 +61,3 @@ function closeLoginModal() {
 
 }
 
-
-
-var form = document.getElementById("testForm");
-
-form.addEventListener('submit', function(event){
-    event.preventDefault()
-    console.log('works finaly')
-    let newHeader = document.createElement('h1');
-    newHeader.innerText = document.querySelector('#test').value;
-
-    document.querySelector('#testsection').append(newHeader);
-})
