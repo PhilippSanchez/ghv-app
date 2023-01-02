@@ -3,6 +3,7 @@ let counter = 1;
 
 function neuerAuftrag() {
     document.body.style.backgroudColor = "red";
+    console.log('works')
     // let auftragsTitle = document.querySelector('#title-input').value;
     // console.log(auftragsTitle);
 
@@ -76,3 +77,14 @@ function closeLoginModal() {
 }
 
 
+
+var form = document.getElementById("testForm");
+
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+    console.log('works finaly')
+    let newHeader = document.createElement('h1');
+    newHeader.innerText = document.querySelector('#test').value;
+
+    document.querySelector('#testsection').append(newHeader);
+})
