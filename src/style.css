@@ -74,7 +74,7 @@ table{
 .neuerAuftragModal {
    visibility: hidden;  
    position: relative;
-   top: -600px;
+ 
    left: 300px;
    height: 500px;
    width: 1024px;
@@ -182,3 +182,12 @@ table{
     font-weight: 300;
     font-style: italic;
 }
+
+.deleteRow {
+    visibility: hidden;
+    background-color: rgb(13, 13, 14);
+    align-self: center;
+    grid-area: 1 / 10 / 1 / 11;
+    z-index: 10;
+}
+
